@@ -34,6 +34,11 @@ namespace BalancedBracketsNS
                 }
                 else if (ch == ']')
                 {
+                    if (brackets == 0)
+                    {
+                        return false;
+                    }
+
                     brackets--;
                 }
             }
